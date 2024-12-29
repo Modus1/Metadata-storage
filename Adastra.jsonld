@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Adastra"
+    },
+    "motivations": {
+      "@value": "The Cardano blockchain represents a revolutionary step in decentralized governance, and Adastra is motivated by the desire to:\n\t•\tEnable Decentralized Participation: Empower every ADA holder to play an active role in shaping Cardano's future.\n\t•\tPromote Ethical Decision-Making: Advocate for proposals that prioritize long-term sustainability and fairness across the ecosystem.\n\t•\tStrengthen Cardano’s Global Impact: Support initiatives that expand blockchain technology's reach into industries such as finance, education, and healthcare."
+    },
+    "objectives": {
+      "@value": "Adastra DRep – Reaching for the Stars in Cardano Governance\n\nAdastra strives to empower the Cardano community by driving transparent, effective, and inclusive governance. Our primary goals include:\n\t•\tAmplifying Community Voices: Ensuring that the diverse interests of Cardano stakeholders are represented in governance decisions.\n\t•\tFostering Innovation: Advocating for proposals that bring meaningful advancements to the Cardano ecosystem.\n\t•\tEnsuring Accountability: Maintaining a high standard of transparency and trust by providing regular updates and insights into governance matters.\n"
+    },
+    "paymentAddress": {
+      "@value": "addr1qxjme55lwhchfkfzh2f5ehx8fuds5t2kfjmqj45xth2k7qh3jfv6q6znxe65yyvzcxzxzvw84u0sjtg4my0uafqctnuq83hq3h"
+    },
+    "qualifications": {
+      "@value": "Adastra is led by a team of dedicated blockchain enthusiasts, governance specialists, and community leaders with:\n\t•\tDeep Blockchain Knowledge: Years of experience in blockchain technology, smart contracts, and decentralized governance.\n\t•\tCardano Ecosystem Expertise: In-depth understanding of Cardano’s unique proof-of-stake and governance systems.\n\t•\tProven Commitment: A track record of active engagement within the Cardano community through advocacy, education, and proposal analysis.\nWhy Choose Adastra? \nAdastra offers a trusted and visionary approach to decentralized governance. By delegating your vote to Adastra, you’re choosing a DRep committed to building a brighter future for Cardano, one decision at a time.\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/AdastraDRep"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "W"
+        },
+        "uri": {
+          "@value": "https://warpcast.com/AdastraDRep"
+        }
+      }
+    ]
+  }
+}
